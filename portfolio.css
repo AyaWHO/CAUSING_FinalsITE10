@@ -490,6 +490,38 @@ body {
         width: 90%;
     }
 }
+/* PHONE */
+@media (max-width: 500px) {
+    .character-img {
+        position: static;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .card-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-text {
+        position: static;
+        text-align: center;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .card-text h1 {
+        margin-left: 0;
+        font-size: 28px;
+    }
+
+    .card-text p {
+        margin-left: 0;
+        font-size: 14px;
+    }
+}
 
 @media (max-width: 900px) {
 
@@ -588,53 +620,4 @@ body {
 }
 
 
-
-/* === TRUE RESPONSIVE DESKTOP LAYOUT ON ALL DEVICES === */
-@media (max-width: 768px) {
-
-    /* Scale down whole card proportionally */
-    .card-container {
-        transform: scale(0.75);
-        transform-origin: top center;
-        height: 400px;
-    }
-
-    .character-img {
-        height: 105%;
-        right: -40px;
-    }
-
-    .card-text h1 {
-        font-size: 32px;
-        margin-left: 40px;
-    }
-
-    .card-text p {
-        font-size: 14px;
-        margin-left: 150px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .card-container {
-        transform: scale(0.60);
-        height: 330px;
-    }
-
-    .character-img {
-        height: 100%;
-        right: -25px;
-    }
-
-    .card-text h1 {
-        font-size: 28px;
-        margin-left: 25px;
-    }
-
-    .card-text p {
-        font-size: 12px;
-        margin-left: 120px;
-    }
-}
 
