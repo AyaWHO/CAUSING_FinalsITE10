@@ -623,11 +623,15 @@ body {
     transform-origin: top center;
 }
 
-/* For mobile: scale the entire card down while keeping layout SAME */
+/* For mobile */
 @media screen and (max-width: 768px) {
     .intro-card {
-        transform: scale(0.75);   /* size adjust */
+        transform: scale(0.75);   /* shrink the WHOLE intro card */
         width: 100%;
+        display: flex;            /* make sure it's centered */
+        justify-content: center;  /* center horizontally */
     }
 }
+
+
 
