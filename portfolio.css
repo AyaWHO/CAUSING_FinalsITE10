@@ -618,17 +618,5 @@ body {
         font-size: 13px;
     }
 }
-/* The whole intro card container */
-.intro-card {
-    transform-origin: top center;
-}
 
-/* For mobile */
-@media screen and (max-width: 768px) {
-    .intro-card {
-        transform: scale(0.75);   
-        width: 100%;
-        display: flex;            
-        justify-content: center;  
-    }
-} 
+
