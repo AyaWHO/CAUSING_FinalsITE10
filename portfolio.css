@@ -476,33 +476,20 @@ body {
     }
 }
 
-
-    /* projects page */
-    .project-card1 img,
-    .project-card2 img,
-    .project-card3 img {
-        width: 90vw;
-    }
-
-    /* about me */
-    .social-box,
-    .profile-box {
-        width: 90%;
-    }
-}
-/* PHONE */
+/*PHONE */
 @media (max-width: 500px) {
+    /* character card */
+    .card-container {
+        width: 100%;
+        height: auto;
+    }
+
     .character-img {
         position: static;
         width: 80%;
         height: auto;
         margin: 0 auto;
         display: block;
-    }
-
-    .card-container {
-        width: 100%;
-        height: auto;
     }
 
     .card-text {
@@ -520,6 +507,19 @@ body {
     .card-text p {
         margin-left: 0;
         font-size: 14px;
+    }
+
+    /* projects page */
+    .project-card1 img,
+    .project-card2 img,
+    .project-card3 img {
+        width: 90vw;
+    }
+
+    /* about me */
+    .social-box,
+    .profile-box {
+        width: 90%;
     }
 }
 
@@ -618,6 +618,3 @@ body {
         font-size: 13px;
     }
 }
-
-
-
