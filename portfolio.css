@@ -587,4 +587,31 @@ body {
     }
 }
 
+.character-img {
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+    width: 36%;     
+    max-width: 380px; 
+    height: auto;
+    z-index: 10;
+}
+
+: 600px) {
+    .character-img {
+        width: 48%;    
+        right: 2%;
+        bottom: 0;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 430px) {
+    .character-img {
+        width: 55%;
+        right: 0%;
+    }
+}
+
+
 
