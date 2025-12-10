@@ -127,14 +127,13 @@ body {
 
 @keyframes slideInRight {
     from {
-        transform: translateX(75px); 
         opacity: 0;
     }
     to {
-        transform: translateX(-4%);  
         opacity: 1;
     }
 }
+
 
 /* TEXT MESSAGE INSIDE THE CARD */
 .card-text {
@@ -612,6 +611,18 @@ body {
         right: 0%;
     }
 }
+/* === FINAL FIX: MAKE CHARACTER BIGGER + FIT INSIDE CARD === */
+.character-img {
+    position: absolute !important;
+    bottom: 0 !important;
+    right: 0 !important;
+
+    width: 32% !important;   /* ← BIGGER HERE */
+    max-width: 420px !important;
+
+    transform: none !important;   /* ← removes slide animation forcing position */
+}
+
 
 
 
