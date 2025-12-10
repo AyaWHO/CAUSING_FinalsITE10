@@ -618,3 +618,16 @@ body {
         font-size: 13px;
     }
 }
+/* The whole intro card container */
+.intro-card {
+    transform-origin: top center;
+}
+
+/* For mobile: scale the entire card down while keeping layout SAME */
+@media screen and (max-width: 768px) {
+    .intro-card {
+        transform: scale(0.75);   /* size adjust */
+        width: 100%;
+    }
+}
+
