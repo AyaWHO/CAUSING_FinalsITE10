@@ -87,9 +87,9 @@ body {
 /* CHARACTER CARD (FROM GAME PNG)*/
 .card-container {
     position: relative;
-    width: 1100px;
-    height: 500px;
-    margin-top: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
 }
 
 .card-bg {
@@ -115,12 +115,10 @@ body {
 
 .character-img {
     position: absolute;
-
-    bottom: 40px;
-    right: -90px;   
-    
-    height: 120%;
-    width: auto;
+    bottom: 0;
+    right: 5%;
+    width: 40%;
+    height: auto;
     z-index: 10;
 
     opacity: 0;
@@ -403,11 +401,6 @@ body {
         width: 100%;
     }
 
-    .character-img {
-        height: 90%;
-        right: 0;
-    }
-
     .card-text h1 {
         font-size: 35px;
         margin-left: 40px;
@@ -483,15 +476,6 @@ body {
         width: 100%;
         height: auto;
     }
-
-    .character-img {
-        position: static;
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-    }
-
     .card-text {
         position: static;
         text-align: center;
@@ -541,17 +525,6 @@ body {
         width: 100%;
         height: auto;
     }
-
-    /* Character stays inside card */
-    .character-img {
-        position: absolute;
-        right: -20px;
-        bottom: 20px;
-        width: 55vw;     
-        height: auto;
-    }
-
-    /* Text stays left-aligned but scaled down */
     .card-text {
         position: absolute;
         left: 6%;
@@ -582,13 +555,6 @@ body {
     .card-bg {
         width: 100%;
     }
-
-    .character-img {
-        width: 60vw;
-        right: -10px;
-        bottom: 10px;
-    }
-
     .card-text h1 {
         font-size: 25px;
         margin-left: 10px;
@@ -605,11 +571,6 @@ body {
         height: 300px;
     }
 
-    .character-img {
-        width: 65vw;
-        right: -5px;
-    }
-
     .card-text h1 {
         font-size: 22px;
     }
@@ -618,5 +579,13 @@ body {
         font-size: 13px;
     }
 }
+@media (max-width: 768px) {
+    .character-img {
+        width: 50%;
+        right: 5%;
+        bottom: 0;
+    }
+}
+
 
 
